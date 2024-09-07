@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">
+        <img src="./images/apple.png" style="padding-top:7px;padding-left:20px;width:60px;"></img>
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Coles</a></li>
+        <li><a href="badges.html">Woolworth</a></li>
+        <li><a class="waves-effect waves-light btn" style="" id="myButoon">Eat me!</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <br />
+    <div class="row" style="justify-content: center;align-items: center;">
+      <div class="col m4 s4 l4">
+
+      </div>
+      <div class="col m4 s4 l4" style="margin: auto; display: flex; flex-direction: column; align-items: center;">
+        <img src="./images/fr.png" style="width: 250px; padding-top: 70px;" />
+        <a class="waves-effect waves-light btn pink lighten-1" style="margin-top: 30px;width: 50%;" id="myButoon2">Eat
+          me!</a>
+      </div>
+
+      <div class="col m4 l4 s4">
+
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="m6 l4 s12">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Buy me! I am green!!!</span>
+                <p>I am a very simple Apple. I am good at Vitamins and make you feel stronger. As in title I am green and can make you feel like green. I know it's not logical, but I have to write something. Thanks!!!</p>
+              </div>
+              <div class="card-action">
+                <a href="#">Buy me</a>
+                <a href="#">Buy me again!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+
+
+    </div>
+
+  </div>
+  <div id="contact" class="container portfolio-content">
+    <h2>Contact</h2>
+    <form id="contactForm">
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="name" type="text" class="validate" name="name" required>
+                <label for="name">Name</label>
+            </div>
+            <div class="input-field col s12">
+                <input id="email" type="email" class="validate" name="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field col s12">
+                <textarea id="message" class="materialize-textarea" name="message" required></textarea>
+                <label for="message">Message</label>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+    </form>
+</div>
+  <footer class="page-footer" style="background-color: #FFAAAA;">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Apple keeps doctor away!</h5>
+          <p class="grey-text text-lighten-4">Eat a apple in a day, Specially green one. It will help you to maintain your health.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Woolworth</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Coles</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Aldi</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Big W</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1>WebSocket Chat</h1>
+  <input id="message" type="text" placeholder="Enter a message">
+  <button onclick="sendMessage()">Send</button>
+  <ul id="messages"></ul>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2024 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

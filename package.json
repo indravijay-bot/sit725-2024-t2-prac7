@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "chai": "^5.1.1",
+    "express": "^4.19.2",
+    "mocha": "^10.7.3",
+    "mongoose": "^8.5.2",
+    "nodemon": "^3.1.4",
+    "socket.io": "^4.7.5",
+    "supertest": "^7.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server_get.js"
+  }
+}
